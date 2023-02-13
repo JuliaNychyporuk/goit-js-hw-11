@@ -1,3 +1,4 @@
+
 import axios from "axios";
 import Notiflix from "notiflix";
 import SimpleLightbox from "simplelightbox";
@@ -155,10 +156,10 @@ scrollUpBtn.addEventListener('click', (e) => {
 })
  
 function onFinishingRenderPictures () {
-  let contentHeight = galleryList.offsetHeight; //висота галереї
-  let yOffset = window.pageYOffset;   //кількість пікселів, на які прокручено документ
-  let windowHeight = window.innerHeight; // висота області перегляду вікна браузера
-  let y = yOffset + windowHeight; // висота прокрутки плюс висота видимості
+  let contentHeight = galleryList.offsetHeight; 
+  let yOffset = window.pageYOffset;   
+  let windowHeight = window.innerHeight; 
+let y = yOffset + windowHeight; 
 
   if(y >= contentHeight || galleryList.children.length <= 40) {
   showFinishedGalleryMessage () 
